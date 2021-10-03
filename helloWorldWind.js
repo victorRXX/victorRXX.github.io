@@ -13,7 +13,7 @@ function readTextFile(file)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-                console.log("loaded file: ", file);
+                //console.log("loaded file: ", file);
                 res = allText;
             }
         }
@@ -138,11 +138,11 @@ var logError = function (jqXhr, text, exception) {
 var timerSeconds = 0;
 setInterval(function() {
 	timerSeconds++;
-	console.log("seconds =" + timerSeconds); 
-	console.log("initialDate =" + initialDate); 
+	//console.log("seconds =" + timerSeconds); 
+	//console.log("initialDate =" + initialDate); 
 
 	//var newDate = initialDate;
-	var speedSeconds = 10; // update 
+	var speedSeconds = 1; // update 
 	initialDate.setTime(initialDate.getTime() + (speedSeconds*1000));
 
 
@@ -157,6 +157,6 @@ setInterval(function() {
 
 	wwd.redraw();
 
-}, 100); // 1000 == 1 second
+}, 1000); // 1000 == 1 second
 
 //$.get(serviceAddress).done(createLayer).fail(logError);
