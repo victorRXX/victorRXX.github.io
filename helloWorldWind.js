@@ -124,7 +124,7 @@ var placemarkLayer = new WorldWind.RenderableLayer();
 wwd.addLayer(placemarkLayer);
 
 // Add a placemark (Pin)
-addExamplePlacemark(placemarkLayer);
+//addExamplePlacemark(placemarkLayer);
 
 const initialDate = new Date();
 addTheDebris(placemarkLayer, initialDate);
@@ -150,10 +150,10 @@ setInterval(function() {
 
 	//var fileData = readTextFile("http://127.0.0.1:8000/cosmos-2251-debris.txt");
 
-	addTheDebris(placemarkLayer, initialDate, "http://127.0.0.1:8000/1999-025.txt");
-	addTheDebris(placemarkLayer, initialDate, "http://127.0.0.1:8000/2019-006.txt");
-	addTheDebris(placemarkLayer, initialDate, "http://127.0.0.1:8000/cosmos-2251-debris.txt");
-	addTheDebris(placemarkLayer, initialDate, "http://127.0.0.1:8000/iridium-33-debris.txt");
+	addTheDebris(placemarkLayer, initialDate, "1999-025.txt");
+	addTheDebris(placemarkLayer, initialDate, "2019-006.txt");
+	addTheDebris(placemarkLayer, initialDate, "cosmos-2251-debris.txt");
+	addTheDebris(placemarkLayer, initialDate, "iridium-33-debris.txt");
 
 	wwd.redraw();
 
